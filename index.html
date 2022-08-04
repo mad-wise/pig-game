@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <div class="rules"><a class="btn btn--rules">Rules</a></div>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" name="diceImg" alt="Playing dice" class="dice" />
+      <a class="btn btn--new">
+        <ion-icon name="game-controller-outline" class="icon"></ion-icon>
+        New game
+      </a>
+
+      <a class="btn btn--roll">
+        <ion-icon name="refresh-outline" class="icon"></ion-icon> Roll dice
+      </a>
+      <a class="btn btn--hold">
+        <ion-icon name="checkmark-done-outline" class="icon"></ion-icon> Hold
+      </a>
+
+      <div class="modal hidden">
+        <button class="close-modal">
+          <ion-icon name="close-outline" class="icon"></ion-icon>
+        </button>
+        <h1 class="modal-header">rules</h1>
+        <p class="modal-text">
+          In this game each player rolls the die. If you roll anything except a
+          “1” you can add that score or take a chance and roll again. You can
+          keep rolling and add that number to your score until you roll a “1”.
+          If you roll a “1 “, you lose all the amount you scored on that turn.
+          It is the player's option to quit at anytime and take the score up to
+          that point. The first player to 100 wins.
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
