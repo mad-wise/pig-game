@@ -97,7 +97,7 @@ bntHold.addEventListener('click', function () {
     document.getElementById(`score--${currentPlayer}`).textContent =
       scores[currentPlayer];
 
-    if (scores[currentPlayer] >= 20) {
+    if (scores[currentPlayer] >= 100) {
       document
         .querySelector(`.player--${currentPlayer}`)
         .classList.add('player--winner');
