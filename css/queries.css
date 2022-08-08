@@ -1,0 +1,132 @@
+/* ---------------------- 
+BELOW 1040px (Smaller desktops)
+*/
+@media (max-width: 65em) {
+  main {
+    width: 80rem;
+    height: 50rem;
+  }
+
+  .player {
+    flex: 50%;
+    padding: 7rem 5rem;
+  }
+
+  .score-name {
+    margin-bottom: 8.5rem;
+  }
+
+  .name {
+    font-size: 3.2rem;
+  }
+
+  .score {
+    font-size: 8.4rem;
+  }
+
+  .dice {
+    position: absolute;
+    top: 12.4rem;
+    transform: translateX(-50%);
+    height: 12rem;
+  }
+
+  .btn--new {
+    top: 3rem;
+  }
+  .btn--roll {
+    top: 33.5rem;
+  }
+  .btn--hold {
+    top: 38.8rem;
+  }
+
+  .score {
+    font-size: 8.4rem;
+  }
+
+  .current-score {
+    font-size: 3.2rem;
+  }
+
+  .current {
+    padding: 1.8rem;
+  }
+}
+
+/* ---------------------- 
+BELOW 832px (Tablets)
+*/
+
+@media (max-width: 52em) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    height: 90vh;
+    max-width: 90vw;
+    flex-direction: column;
+  }
+
+  .player {
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .score-name {
+    width: 50%;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  .current {
+    width: 40%;
+  }
+
+  main .btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 3.2rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .btn--new {
+    top: 1%;
+  }
+  .btn--roll {
+    top: 90%;
+    transform: translateX(-100%);
+  }
+  .btn--hold {
+    top: 90%;
+    transform: translateX(50%);
+  }
+
+  main .btn--hold:active {
+    transform: translate(50%, 3px);
+  }
+
+  main .btn--roll:active {
+    transform: translate(-100%, 3px);
+  }
+
+  main .btn--new:active {
+    transform: translateY(-50%, 3px);
+  }
+
+  .dice {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-header {
+    font-size: 3.2rem;
+  }
+
+  .modal-text {
+    font-size: 2.4rem;
+  }
+}
