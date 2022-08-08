@@ -141,7 +141,7 @@ BELOW 832px (Tablets)
 }
 
 /* ---------------------- 
-BELOW 512px (Smartphones)
+BELOW 512px (Tablets)
 */
 
 @media (max-width: 32em) {
@@ -150,16 +150,17 @@ BELOW 512px (Smartphones)
   }
 
   .score-name {
-    margin-bottom: 4rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .name {
     margin-top: 3rem;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 
   .score {
-    font-size: 8.4rem;
+    font-size: 7.6rem;
   }
 
   .current-label {
