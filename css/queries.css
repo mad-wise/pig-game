@@ -149,8 +149,16 @@ BELOW 512px (Tablets)
     font-size: 50%;
   }
 
+  main {
+    height: 80vh;
+  }
+
+  .player {
+    padding: 0 2rem;
+  }
+
   .score-name {
-    gap: 1rem;
+    gap: 0.5rem;
     margin-bottom: 1rem;
   }
 
