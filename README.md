@@ -29,7 +29,7 @@ After cloning, simply open the index.html file in a web browser to start playing
 
 ## Features
 
-Simple and intuitive UI
-Responsive design for desktop and mobile devices
-Exciting dice roll animation
-Score tracking for two players
+- Simple and intuitive UI
+- Responsive design for desktop and mobile devices
+- Exciting dice roll animation
+- Score tracking for two players
